@@ -322,7 +322,7 @@ function WaitlistSection() {
   return (
     <Section id="waitlist" bg="#F5F5F3">
       <div style={{maxWidth:560,margin:"0 auto",textAlign:"center",boxSizing:"border-box",width:"100%"}}>
-        <SectionH2 mb={14}>Get ahead of the noise.</SectionH2>
+        <SectionH2 mb={14}>Get early access.</SectionH2>
         <p style={{fontSize:16,color:"#6B7280",lineHeight:1.7,marginBottom:32}}>
           Vane is rolling out in small batches. Leave your email and we'll reach out when your spot is ready.
         </p>
