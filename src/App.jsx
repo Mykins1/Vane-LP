@@ -240,7 +240,7 @@ const LOGOS = [
 
 function HowItWorksSection() {
   return (
-    <Section bg="#fff">
+    <Section id="howItWorks" bg="#fff">
       <SectionLabel>How it works</SectionLabel>
       <SectionH2>Connect once. See everything.</SectionH2>
       <div style={{display:"grid",gridTemplateColumns:"repeat(auto-fill,minmax(min(100%,240px),1fr))",gap:28,marginBottom:44}}>
@@ -269,7 +269,7 @@ function HowItWorksSection() {
   );
 }
 
-/* ─── Waitlist section ────────────────────────────────────────────────────── */
+/* Waitlist section */
 function WaitlistSection() {
   const [email,setEmail] = useState("");
   const [checked,setChecked] = useState(false);
@@ -424,11 +424,11 @@ export default function VaneLanding() {
         <div style={{display:"flex",flexDirection:"column",alignItems:"stretch",
           gap:10,maxWidth:320,margin:"0 auto 18px"}}>
           <button onClick={()=>scrollTo("waitlist")}
-            style={{background:"#1D4ED8",color:"#fff",border:"none",borderRadius:10,
+            style={{background:"#1D4ED8",color:"#fff",border:"none",borderRadius:"10px 10px 0px 0px",
               padding:"13px 24px",fontSize:15,fontWeight:700,cursor:"pointer",width:"100%"}}>
             Get early access
           </button>
-          <button style={{background:"none",border:"1px solid #D1D5DB",borderRadius:10,
+          <button onClick={()=>scrollTo("howItWorks")} style={{background:"none",border:"1px solid #D1D5DB",borderRadius:"0px 0px 10px 10px",
             padding:"13px 24px",fontSize:15,fontWeight:600,cursor:"pointer",
             color:"#374151",width:"100%"}}>
             See how it works
