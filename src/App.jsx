@@ -260,12 +260,21 @@ function WhyVaneExist() {
 
 /* How it works section */
 const STEPS = [
-  {n:"01",title:"Connect your tools",
-   text:"One-click OAuth for Stripe, Gmail, Notion, and Slack. No API keys. No config files."},
-  {n:"02",title:"See your unified feed",
-   text:"Every payment, message, and task in one prioritized list. Urgent things surface. Noise stays quiet."},
-  {n:"03",title:"Act without switching",
-   text:"Reply to emails, retry charges, close tasks — all from Vane. Never leave to get things done."},
+  {
+    n: "01",
+    title: "Sign in to your tools",
+    text: "Connect Stripe, Gmail, Notion, and Slack by signing into each one — the same way you'd log into any website. No technical setup, no help from a developer.",
+  },
+  {
+    n: "02",
+    title: "Everything shows up in one list",
+    text: "Vane pulls in your payments, emails, tasks, and messages and lines them up in one place. The most urgent things appear at the top — nothing buried, nothing missed.",
+  },
+  {
+    n: "03",
+    title: "Handle it all without opening other apps",
+    text: "Reply to an email, retry a failed payment, tick off a task — right here. You don't need to open Stripe or Gmail or Notion to get things done",
+  },
 ];
 const LOGOS = [
   {name:"Stripe",el:<StripeIcon/>},{name:"Gmail",el:<GmailIcon/>},
