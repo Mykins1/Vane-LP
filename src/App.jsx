@@ -204,19 +204,53 @@ const PROBLEMS = [
    text:"A failed payment buried in Stripe. A follow-up that never happened. A task that was overdue before you noticed."},
 ];
 
-function ProblemSection() {
+function WhyVaneExist() {
   return (
     <Section>
-      <SectionLabel>The problem</SectionLabel>
-      <SectionH2>You're managing tools,{" "}not your business.</SectionH2>
+      <SectionLabel>Why Vane Exists</SectionLabel>
+      <SectionH2>
+        Too many tools. Too much switching. Things falling through.
+      </SectionH2>
       {/* single-column on mobile, 3-col on desktop via inline grid */}
-      <div style={{display:"grid",gridTemplateColumns:"repeat(auto-fill,minmax(min(100%,260px),1fr))",gap:16}}>
-        {PROBLEMS.map(p=>(
-          <div key={p.title} style={{border:"1px solid #E5E7EB",borderRadius:12,
-            padding:"22px 20px",background:"#fff",boxSizing:"border-box"}}>
-            <div style={{marginBottom:12}}>{p.icon}</div>
-            <div style={{fontWeight:700,fontSize:15,color:"#1A1A18",marginBottom:8}}>{p.title}</div>
-            <p style={{fontSize:14,color:"#6B7280",lineHeight:1.65,margin:0}}>{p.text}</p>
+      <div
+        style={{
+          display: "grid",
+          gridTemplateColumns: "repeat(auto-fill,minmax(min(100%,260px),1fr))",
+          gap: 16,
+        }}
+      >
+        {PROBLEMS.map((p) => (
+          <div
+            key={p.title}
+            style={{
+              border: "1px solid #E5E7EB",
+              borderRadius: 12,
+              padding: "22px 20px",
+              background: "#fff",
+              boxSizing: "border-box",
+            }}
+          >
+            <div style={{ marginBottom: 12 }}>{p.icon}</div>
+            <div
+              style={{
+                fontWeight: 700,
+                fontSize: 15,
+                color: "#1A1A18",
+                marginBottom: 8,
+              }}
+            >
+              {p.title}
+            </div>
+            <p
+              style={{
+                fontSize: 14,
+                color: "#6B7280",
+                lineHeight: 1.65,
+                margin: 0,
+              }}
+            >
+              {p.text}
+            </p>
           </div>
         ))}
       </div>
@@ -242,7 +276,7 @@ function HowItWorksSection() {
   return (
     <Section id="howItWorks" bg="#fff">
       <SectionLabel>How it works</SectionLabel>
-      <SectionH2>Connect once. See everything.</SectionH2>
+      <SectionH2>Connect your tools once. Vane does the rest.</SectionH2>
       <div style={{display:"grid",gridTemplateColumns:"repeat(auto-fill,minmax(min(100%,240px),1fr))",gap:28,marginBottom:44}}>
         {STEPS.map(s=>(
           <div key={s.n} style={{boxSizing:"border-box"}}>
@@ -350,13 +384,27 @@ export default function VaneLanding() {
   const scrollTo = id => document.getElementById(id)?.scrollIntoView({behavior:"smooth"});
 
   return (
-    <div style={{fontFamily:"'Sora',system-ui,sans-serif",background:"#FAFAF9",
-      color:"#1A1A18",lineHeight:1.6,overflowX:"hidden",minWidth:0}}>
-
+    <div
+      style={{
+        fontFamily: "'Sora',system-ui,sans-serif",
+        background: "#FAFAF9",
+        color: "#1A1A18",
+        lineHeight: 1.6,
+        overflowX: "hidden",
+        minWidth: 0,
+      }}
+    >
       {/* Google Fonts — loaded via link so @import doesn't race */}
-      <link rel="preconnect" href="https://fonts.googleapis.com"/>
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous"/>
-      <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800;900&display=swap" rel="stylesheet"/>
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossOrigin="anonymous"
+      />
+      <link
+        href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800;900&display=swap"
+        rel="stylesheet"
+      />
 
       <style>{`
         *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
@@ -367,29 +415,81 @@ export default function VaneLanding() {
       `}</style>
 
       {/* ── NAV ── */}
-      <nav style={{
-        position:"sticky",top:0,zIndex:100,padding:"0 20px",
-        background: scrolled?"rgba(250,250,249,0.94)":"transparent",
-        backdropFilter: scrolled?"blur(12px)":"none",
-        borderBottom: scrolled?"1px solid #E5E7EB":"1px solid transparent",
-        transition:"background 0.3s,border-color 0.3s",
-        width:"100%",boxSizing:"border-box",
-      }}>
-        <div style={{maxWidth:1080,margin:"0 auto",height:60,
-          display:"flex",alignItems:"center",justifyContent:"space-between",gap:12,minWidth:0}}>
+      <nav
+        style={{
+          position: "sticky",
+          top: 0,
+          zIndex: 100,
+          padding: "0 20px",
+          background: scrolled ? "rgba(250,250,249,0.94)" : "transparent",
+          backdropFilter: scrolled ? "blur(12px)" : "none",
+          borderBottom: scrolled
+            ? "1px solid #E5E7EB"
+            : "1px solid transparent",
+          transition: "background 0.3s,border-color 0.3s",
+          width: "100%",
+          boxSizing: "border-box",
+        }}
+      >
+        <div
+          style={{
+            maxWidth: 1080,
+            margin: "0 auto",
+            height: 60,
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "space-between",
+            gap: 12,
+            minWidth: 0,
+          }}
+        >
           {/* logo */}
-          <div style={{display:"flex",alignItems:"center",gap:7,flexShrink:0,minWidth:0}}>
-            <VaneIcon/>
-            <span style={{fontWeight:800,fontSize:17,letterSpacing:"-0.02em",whiteSpace:"nowrap"}}>Vane</span>
+          <div
+            style={{
+              display: "flex",
+              alignItems: "center",
+              gap: 7,
+              flexShrink: 0,
+              minWidth: 0,
+            }}
+          >
+            <VaneIcon />
+            <span
+              style={{
+                fontWeight: 800,
+                fontSize: 17,
+                letterSpacing: "-0.02em",
+                whiteSpace: "nowrap",
+              }}
+            >
+              Vane
+            </span>
           </div>
           {/* actions */}
-          <div style={{display:"flex",gap:8,alignItems:"center",flexShrink:0}}>
+          <div
+            style={{
+              display: "flex",
+              gap: 8,
+              alignItems: "center",
+              flexShrink: 0,
+            }}
+          >
             {/* hide Sign in below 400px */}
-            
-            <button onClick={()=>scrollTo("waitlist")}
-              style={{background:"#1D4ED8",color:"#fff",border:"none",borderRadius:8,
-                padding:"8px 14px",fontSize:13,fontWeight:700,cursor:"pointer",
-                whiteSpace:"nowrap"}}>
+
+            <button
+              onClick={() => scrollTo("waitlist")}
+              style={{
+                background: "#1D4ED8",
+                color: "#fff",
+                border: "none",
+                borderRadius: 8,
+                padding: "8px 14px",
+                fontSize: 13,
+                fontWeight: 700,
+                cursor: "pointer",
+                whiteSpace: "nowrap",
+              }}
+            >
               Get early access
             </button>
           </div>
@@ -397,81 +497,200 @@ export default function VaneLanding() {
       </nav>
 
       {/* ── HERO ── */}
-      <div style={{
-        padding:"60px 20px 48px",
-        maxWidth:1080,margin:"0 auto",
-        textAlign:"center",
-        boxSizing:"border-box",width:"100%",
-        opacity:heroVis?1:0,
-        transform:heroVis?"translateY(0)":"translateY(20px)",
-        transition:"opacity 0.8s ease,transform 0.8s ease",
-      }}>
-        <p style={{fontSize:10,fontWeight:700,letterSpacing:"0.14em",textTransform:"uppercase",
-          color:"#6B7280",marginBottom:18}}>Now in private beta</p>
+      <div
+        style={{
+          padding: "60px 20px 48px",
+          maxWidth: 1080,
+          margin: "0 auto",
+          textAlign: "center",
+          boxSizing: "border-box",
+          width: "100%",
+          opacity: heroVis ? 1 : 0,
+          transform: heroVis ? "translateY(0)" : "translateY(20px)",
+          transition: "opacity 0.8s ease,transform 0.8s ease",
+        }}
+      >
+        <p
+          style={{
+            fontSize: 10,
+            fontWeight: 700,
+            letterSpacing: "0.14em",
+            textTransform: "uppercase",
+            color: "#6B7280",
+            marginBottom: 18,
+          }}
+        >
+          Now in private beta
+        </p>
 
-        <h1 style={{fontSize:"clamp(32px,8vw,62px)",fontWeight:900,lineHeight:1.06,
-          letterSpacing:"-0.03em",color:"#1A1A18",marginBottom:18}}>
-          Everything pointing<br/>one way.
+        <h1
+          style={{
+            fontSize: "clamp(32px,8vw,62px)",
+            fontWeight: 900,
+            lineHeight: 1.06,
+            letterSpacing: "-0.03em",
+            color: "#1A1A18",
+            marginBottom: 18,
+          }}
+        >
+          Everything pointing
+          <br />
+          one way.
         </h1>
 
-        <p style={{fontSize:"clamp(15px,2.5vw,18px)",color:"#6B7280",
-          maxWidth:500,margin:"0 auto 28px",lineHeight:1.72}}>
-          Stripe, Gmail, Notion, and Slack all live in separate tabs — which means things slip through.
-          Vane pulls every payment, message, and task into one feed so the signal rises and the noise stays quiet.
+        <p
+          style={{
+            fontSize: "clamp(15px,2.5vw,18px)",
+            color: "#6B7280",
+            maxWidth: 500,
+            margin: "0 auto 28px",
+            lineHeight: 1.72,
+          }}
+        >
+          Vane is a unified inbox for your business tools. See every payment,
+          message, and task in one place — and act on them without switching
+          tabs.
         </p>
 
         {/* CTAs — stacked on mobile */}
-        <div style={{display:"flex",flexDirection:"column",alignItems:"stretch",
-          gap:10,maxWidth:320,margin:"0 auto 18px"}}>
-          <button onClick={()=>scrollTo("waitlist")}
-            style={{background:"#1D4ED8",color:"#fff",border:"none",borderRadius:"10px 10px 0px 0px",
-              padding:"13px 24px",fontSize:15,fontWeight:700,cursor:"pointer",width:"100%"}}>
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "stretch",
+            gap: 10,
+            maxWidth: 320,
+            margin: "0 auto 18px",
+          }}
+        >
+          <button
+            onClick={() => scrollTo("waitlist")}
+            style={{
+              background: "#1D4ED8",
+              color: "#fff",
+              border: "none",
+              borderRadius: "10px 10px 0px 0px",
+              padding: "13px 24px",
+              fontSize: 15,
+              fontWeight: 700,
+              cursor: "pointer",
+              width: "100%",
+            }}
+          >
             Get early access
           </button>
-          <button onClick={()=>scrollTo("howItWorks")} style={{background:"none",border:"1px solid #D1D5DB",borderRadius:"0px 0px 10px 10px",
-            padding:"13px 24px",fontSize:15,fontWeight:600,cursor:"pointer",
-            color:"#374151",width:"100%"}}>
+          <button
+            onClick={() => scrollTo("howItWorks")}
+            style={{
+              background: "none",
+              border: "1px solid #D1D5DB",
+              borderRadius: "0px 0px 10px 10px",
+              padding: "13px 24px",
+              fontSize: 15,
+              fontWeight: 600,
+              cursor: "pointer",
+              color: "#374151",
+              width: "100%",
+            }}
+          >
             See how it works
           </button>
         </div>
 
-        <p style={{fontSize:13,color:"#9CA3AF",marginBottom:44}}>
+        <p style={{ fontSize: 13, color: "#9CA3AF", marginBottom: 44 }}>
           Join 1,200+ founders already on the list
         </p>
 
-        <FeedMockup/>
+        <FeedMockup />
       </div>
 
       {/* ── SECTIONS ── */}
-      <ProblemSection/>
-      <HowItWorksSection/>
-      <WaitlistSection/>
+      <WhyVaneExist />
+      <HowItWorksSection />
+      <WaitlistSection />
 
       {/* ── FOOTER ── */}
-      <footer style={{borderTop:"1px solid #E5E7EB",padding:"40px 20px 32px",
-        boxSizing:"border-box",width:"100%"}}>
-        <div style={{maxWidth:1080,margin:"0 auto",boxSizing:"border-box",width:"100%"}}>
+      <footer
+        style={{
+          borderTop: "1px solid #E5E7EB",
+          padding: "40px 20px 32px",
+          boxSizing: "border-box",
+          width: "100%",
+        }}
+      >
+        <div
+          style={{
+            maxWidth: 1080,
+            margin: "0 auto",
+            boxSizing: "border-box",
+            width: "100%",
+          }}
+        >
           {/* top row — stacks on mobile */}
-          <div style={{display:"flex",justifyContent:"space-between",alignItems:"flex-start",
-            flexWrap:"wrap",gap:24,marginBottom:28}}>
+          <div
+            style={{
+              display: "flex",
+              justifyContent: "space-between",
+              alignItems: "flex-start",
+              flexWrap: "wrap",
+              gap: 24,
+              marginBottom: 28,
+            }}
+          >
             <div>
-              <div style={{display:"flex",alignItems:"center",gap:7,marginBottom:7}}>
-                <VaneIcon/>
-                <span style={{fontWeight:800,fontSize:15}}>Vane</span>
+              <div
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  gap: 7,
+                  marginBottom: 7,
+                }}
+              >
+                <VaneIcon />
+                <span style={{ fontWeight: 800, fontSize: 15 }}>Vane</span>
               </div>
-              <p style={{fontSize:13,color:"#6B7280",lineHeight:1.55,maxWidth:200}}>
+              <p
+                style={{
+                  fontSize: 13,
+                  color: "#6B7280",
+                  lineHeight: 1.55,
+                  maxWidth: 200,
+                }}
+              >
                 One feed for everything that matters.
               </p>
             </div>
-            <div style={{display:"flex",gap:18,flexWrap:"wrap",alignItems:"center"}}>
-              {["Privacy","Terms","Twitter/X","hello@vane.so"].map(l=>(
-                <a key={l} href="#"
-                  style={{fontSize:13,color:"#6B7280",textDecoration:"none"}}>{l}</a>
+            <div
+              style={{
+                display: "flex",
+                gap: 18,
+                flexWrap: "wrap",
+                alignItems: "center",
+              }}
+            >
+              {["Privacy", "Terms", "Twitter/X", "hello@vane.so"].map((l) => (
+                <a
+                  key={l}
+                  href="#"
+                  style={{
+                    fontSize: 13,
+                    color: "#6B7280",
+                    textDecoration: "none",
+                  }}
+                >
+                  {l}
+                </a>
               ))}
             </div>
           </div>
-          <div style={{borderTop:"1px solid #E5E7EB",paddingTop:18,
-            fontSize:12,color:"#9CA3AF"}}>
+          <div
+            style={{
+              borderTop: "1px solid #E5E7EB",
+              paddingTop: 18,
+              fontSize: 12,
+              color: "#9CA3AF",
+            }}
+          >
             © 2026 Vane. Built for founders who have enough tabs open.
           </div>
         </div>
