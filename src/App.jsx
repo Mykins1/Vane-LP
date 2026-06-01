@@ -700,7 +700,7 @@ export default function VaneLanding() {
               color: "#9CA3AF",
             }}
           >
-            © 2026 Vane. Built for founders who have enough tabs open.
+            © 2026 Vane. Built for managers who have enough tabs open.
           </div>
         </div>
       </footer>
