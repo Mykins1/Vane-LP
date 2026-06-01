@@ -272,7 +272,7 @@ function HowItWorksSection() {
 /* ─── Waitlist section ────────────────────────────────────────────────────── */
 function WaitlistSection() {
   const [email,setEmail] = useState("");
-  const [checked,setChecked] = useState(true);
+  const [checked,setChecked] = useState(false);
   const [done,setDone] = useState(false);
   const submit = () => { if (email.includes("@")) setDone(true); };
 
@@ -335,7 +335,7 @@ function WaitlistSection() {
   );
 }
 
-/* ─── Root ────────────────────────────────────────────────────────────────── */
+/* Root */
 export default function VaneLanding() {
   const [scrolled,setScrolled] = useState(false);
   const [heroVis,setHeroVis] = useState(false);
@@ -472,7 +472,7 @@ export default function VaneLanding() {
           </div>
           <div style={{borderTop:"1px solid #E5E7EB",paddingTop:18,
             fontSize:12,color:"#9CA3AF"}}>
-            © 2025 Vane. Built for founders who have enough tabs open.
+            © 2026 Vane. Built for founders who have enough tabs open.
           </div>
         </div>
       </footer>
