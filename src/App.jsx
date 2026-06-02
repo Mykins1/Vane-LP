@@ -211,8 +211,8 @@ function FeedMockup() {
     <div
       style={{
         background: "#fff",
-        border: "1px solid #E5E7EB",
-        borderRadius: 14,
+        // border: "1px solid #E5E7EB",
+        // borderRadius: 14,
         boxShadow:
           "0 16px 56px -8px rgba(0,0,0,0.11),0 4px 16px -2px rgba(0,0,0,0.05)",
         overflow: "hidden",
