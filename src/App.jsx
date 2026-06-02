@@ -885,11 +885,11 @@ export default function VaneLanding() {
       <nav
         style={{
           position: "sticky",
-          top: 0,
+        
           zIndex: 100,
-          padding: "0 20px",
+          padding: "10px 20px",
           background: "rgba(250,250,249,0.94)",
-          borderBottom:"1px solid #E5E7EB",
+          // borderBottom:"1px solid #E5E7EB",
           transition: "background 0.3s,border-color 0.3s",
           width: "100%",
           boxSizing: "border-box",
@@ -901,9 +901,10 @@ export default function VaneLanding() {
             margin: "0 auto",
             height: 60,
             display: "flex",
-            alignItems: "center",
-            justifyContent: "space-between",
-            gap: 12,
+            flexDirection:"column",
+            alignItems: "left",
+            // justifyContent: "space-between",
+    
             minWidth: 0,
           }}
         >
@@ -912,7 +913,7 @@ export default function VaneLanding() {
             style={{
               display: "flex",
               alignItems: "center",
-              gap: 7,
+              gap: 4,
               flexShrink: 0,
               minWidth: 0,
             }}
@@ -929,39 +930,17 @@ export default function VaneLanding() {
               Vane
             </span>
           </div>
-          {/* actions */}
-          <div
-            style={{
-              display: "flex",
-              gap: 8,
-              alignItems: "center",
-              flexShrink: 0,
-            }}
-          >
-            <button
-              onClick={() => scrollTo("waitlist")}
-              style={{
-                background: "#1D4ED8",
-                color: "#fff",
-                border: "none",
-                borderRadius: 8,
-                padding: "8px 14px",
-                fontSize: 13,
-                fontWeight: 700,
-                cursor: "pointer",
-                whiteSpace: "nowrap",
-              }}
-            >
-              Join Us
-            </button>
-          </div>
+          
+         <p style={{ fontSize: 13, color: "#6b7280",}}>
+          One feed for everything that matters.
+        </p>
         </div>
       </nav>
 
       {/* ── HERO ── */}
       <div
         style={{
-          padding: "50px 20px 48px",
+          padding: "20px 20px 48px",
           maxWidth: 1080,
           margin: "0 auto",
           textAlign: "center",
