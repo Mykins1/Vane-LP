@@ -887,9 +887,9 @@ export default function VaneLanding() {
           position: "sticky",
         
           zIndex: 100,
-          padding: "10px 20px",
+          padding: "10px 20px ",
           background: "rgba(250,250,249,0.94)",
-          // borderBottom:"1px solid #E5E7EB",
+          borderBottom:"1px solid #E5E7EB",
           transition: "background 0.3s,border-color 0.3s",
           width: "100%",
           boxSizing: "border-box",
@@ -899,7 +899,7 @@ export default function VaneLanding() {
           style={{
             maxWidth: 1080,
             margin: "0 auto",
-            height: 60,
+            // height: 60,
             display: "flex",
             flexDirection:"column",
             alignItems: "left",
