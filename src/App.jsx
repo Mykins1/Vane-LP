@@ -940,7 +940,7 @@ export default function VaneLanding() {
       {/* ── HERO ── */}
       <div
         style={{
-          padding: "20px 20px 48px",
+          padding: "28px 20px 48px",
           maxWidth: 1080,
           margin: "0 auto",
           textAlign: "center",
