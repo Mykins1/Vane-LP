@@ -498,7 +498,7 @@ const PROBLEMS = [
   {
     icon: <SwitchIcon />,
     title: "Constant switching",
-    text: "Every context switch costs you focus. By the time you've checked your messages, emails, and tasks, you've forgotten why you opened any of them.",
+    text: "Every context switch costs you focus. By the time you've checked messages, emails, and tasks, you've forgotten why you opened any of them.",
   },
   {
     icon: <SlipIcon />,
