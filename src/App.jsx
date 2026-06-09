@@ -493,17 +493,17 @@ const PROBLEMS = [
   {
     icon: <ToolIcon />,
     title: "Tool overload",
-    text: "You have a CRM, a chatbot, three task apps, and a spreadsheet that ties it all together. The tools are supposed to help. They don't.",
+    text: "You have a payment processor, an inbox, a project tracker, and a messaging app. No single place to see what actually needs your attention ASAP.",
   },
   {
     icon: <SwitchIcon />,
     title: "Constant switching",
-    text: "Every context switch costs you focus. By the time you've checked Slack, Gmail, and Notion, you've forgotten why you opened any of them.",
+    text: "Every context switch costs you focus. By the time you've checked your messages, emails, and tasks, you've forgotten why you opened any of them.",
   },
   {
     icon: <SlipIcon />,
     title: "Things fall through",
-    text: "A failed payment buried in Stripe. A follow-up that never happened. A task that was overdue before you noticed.",
+    text: "A failed payment you didn't catch. A message you meant to reply to. A task that was overdue before you noticed.",
   },
 ];
 
@@ -566,17 +566,17 @@ const STEPS = [
   {
     n: "01",
     title: "Sign in to your tools",
-    text: "Connect Stripe, Gmail, Notion, and Slack by signing into each one — the same way you'd log into any website. No technical setup, no help from a developer.",
+    text: "Connect your payment processor, inbox, project tracker, and messaging app by signing in the same way you'd log into any website. No technical setup, no developer needed.",
   },
   {
     n: "02",
     title: "Everything shows up in one list",
-    text: "Vane pulls in your payments, emails, tasks, and messages and lines them up in one place. The most urgent things appear at the top — nothing buried, nothing missed.",
+    text: "Vane pulls in your payments, emails, tasks, and messages and lines them up in one place. You decide which tools and item types sit at the top, so what matters most to you is always first",
   },
   {
     n: "03",
     title: "Handle it all without opening other apps",
-    text: "Reply to an email, retry a failed payment, tick off a task — right here. You don't need to open Stripe or Gmail or Notion to get things done",
+    text: "Reply to an email, retry a failed payment, tick off a task — right here. No tab switching required.",
   },
 ];
 const LOGOS = [
@@ -885,11 +885,11 @@ export default function VaneLanding() {
       <nav
         style={{
           position: "sticky",
-        
+
           zIndex: 100,
           padding: "10px 20px ",
           background: "rgba(250,250,249,0.94)",
-          borderBottom:"1px solid #E5E7EB",
+          borderBottom: "1px solid #E5E7EB",
           transition: "background 0.3s,border-color 0.3s",
           width: "100%",
           boxSizing: "border-box",
@@ -901,10 +901,10 @@ export default function VaneLanding() {
             margin: "0 auto",
             // height: 60,
             display: "flex",
-            flexDirection:"column",
+            flexDirection: "column",
             alignItems: "left",
             // justifyContent: "space-between",
-    
+
             minWidth: 0,
           }}
         >
@@ -930,10 +930,10 @@ export default function VaneLanding() {
               Vane
             </span>
           </div>
-          
-         <p style={{ fontSize: 13, color: "#6b7280",}}>
-          One feed for everything that matters.
-        </p>
+
+          <p style={{ fontSize: 13, color: "#6b7280" }}>
+            One feed. Everything that matters.
+          </p>
         </div>
       </nav>
 
@@ -988,9 +988,9 @@ export default function VaneLanding() {
             lineHeight: 1.72,
           }}
         >
-          Vane is a unified inbox for your business tools. See every payment,
-          message, and task in one place — and act on them without switching
-          tabs.
+          Vane is a unified feed for your business tools. See every payment,
+          message, and task in one place. Ranked by what you decide matters
+          most, and act on them without switching tabs.
         </p>
 
         {/* CTAs — stacked on mobile */}
