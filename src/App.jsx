@@ -932,7 +932,7 @@ export default function VaneLanding() {
           </div>
 
           <p style={{ fontSize: 13, color: "#6b7280" }}>
-            One feed. Everything that matters.
+            One feed for everything that matters.
           </p>
         </div>
       </nav>
