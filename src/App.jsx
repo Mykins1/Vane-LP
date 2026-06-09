@@ -988,7 +988,7 @@ export default function VaneLanding() {
             lineHeight: 1.72,
           }}
         >
-          Vane unifies your business tools into a single, intelligent feed.<br/> See every transaction, message, and task in one centralized view.<br/> Prioritized by your rules, and actionable without ever switching tabs.
+          ​Vane unifies your business tools into a single, actionable feed. Stop drowning in open tabs—see every payment, client message, and project task in one centralized view, ranked by what moves the needle.
         </p>
 
         {/* CTAs — stacked on mobile */}
