@@ -93,7 +93,7 @@ export const STEPS = [
     id: "connect",
     n: "01",
     title: "Connect your stack",
-    text: "Link your payment processor, inbox, project tracker, and messaging app in jut a few clicks. Vane aggregates your fragmented data into a single, secure stream.",
+    text: "Link your payment processor, inbox, project tracker, and messaging app in just a few clicks. Vane aggregates your fragmented data into a single, secure stream.",
   },
   {
     id: "unified",
