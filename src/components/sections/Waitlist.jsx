@@ -120,7 +120,7 @@ export default function Waitlist() {
               <Checkbox
                 checked={isFounder}
                 onChange={() => setIsFounder((p) => !p)}
-                label="I'm a small business owner or solo founder"
+                label="I am a solo founder or agency owner (Prioritize my access)"
               />
             </div>
           </>
