@@ -104,7 +104,7 @@ export default function Waitlist() {
                 onKeyDown={(e) => e.key === "Enter" && submit()}
               />
               <Button onClick={submit} variant="primary" width="100%">
-                Join waitlist
+                Join the Waitlist
               </Button>
             </div>
 

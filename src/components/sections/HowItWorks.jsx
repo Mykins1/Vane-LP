@@ -20,6 +20,7 @@ function Step({ n, title, text }) {
           lineHeight: 1,
           marginBottom: 10,
           fontVariantNumeric: "tabular-nums",
+          WebkitTextStroke: "1px #000000",
         }}
       >
         {n}
