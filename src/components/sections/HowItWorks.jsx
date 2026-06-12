@@ -82,7 +82,7 @@ export default function HowItWorks() {
         {INTEGRATIONS.map((i) => (
           <IntegrationChip icon={i.icon} name={i.name} />
         ))}
-        <span style={{ fontSize: 13, color: colors.textTertiary }}>
+        <span style={{ fontSize: 13, color: colors.textPrimary }}>
           + more coming soon
         </span>
       </div>
