@@ -53,7 +53,7 @@ export default function HowItWorks() {
   return (
     <Section id="howItWorks" bg={colors.bgWhite}>
       <SectionLabel>How it works</SectionLabel>
-      <SectionH2>Connect your tools once. Vane does the rest.</SectionH2>
+      <SectionH2>How Vane clears the noise.</SectionH2>
 
       {/* Steps grid */}
       <div
