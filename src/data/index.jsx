@@ -123,6 +123,4 @@ export const INTEGRATIONS = [
 export const FOOTER_LINKS = [
   { label: "Privacy", href: "/privacy" },
   { label: "Terms", href: "/terms" },
-  { label: "Twitter / X", href: "https://x.com/vane_so" },
-  { label: "hello@vane.so", href: "mailto:hello@vane.so" },
 ];
